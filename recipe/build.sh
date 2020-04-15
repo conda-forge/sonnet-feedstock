@@ -11,6 +11,6 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       ..
 
 make -j ${CPU_COUNT}
-ctest -E "sonnet-test_highlighter"
+ctest -E "sonnet-test_highlighter|sonnet-test_autodetect"
 make install
 popd

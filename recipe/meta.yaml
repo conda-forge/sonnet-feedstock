@@ -39,9 +39,11 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/sonnet/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: BSD-3-Clause AND LGPL-2.0-or-later AND LGPL-2.1-or-later
+  license_file:
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-or-later.txt
   summary: Multi-language spell checker
   description: |
     Sonnet is a plugin-based spell checking library for Qt-based applications.

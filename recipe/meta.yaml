@@ -1,5 +1,5 @@
 {% set name = "sonnet" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/sonnet-{{ version }}.tar.xz
-  sha256: 009f76fc4317e407d30c4e162a807d620a95217f5db271a14b1f9fc4339d232c
+  sha256: ec72860cac92a9611b15f1055592434cf2bb44fe428abb474f4f227b4f9f94d6
 
 build:
   number: 0
@@ -39,9 +39,11 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/sonnet/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: BSD-3-Clause AND LGPL-2.0-or-later AND LGPL-2.1-or-later
+  license_file:
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-or-later.txt
   summary: Multi-language spell checker
   description: |
     Sonnet is a plugin-based spell checking library for Qt-based applications.

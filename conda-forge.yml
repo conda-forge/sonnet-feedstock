@@ -3,3 +3,6 @@ bot:
   automerge: true
   check_solvable: true
 
+github:
+  branch_name: main
+  tooling_branch_name: main

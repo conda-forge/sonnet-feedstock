@@ -1,5 +1,5 @@
 {% set name = "sonnet" %}
-{% set version = "5.76.0" %}
+{% set version = "5.81.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/sonnet-{{ version }}.tar.xz
-  sha256: cb6bacae27cfa3f8b3ce300b18efe16730783f143c4a7fccfa634f528262ef9b
+  sha256: 4a7c4e4d3da2df50004565c76ce0334697b941bd011be08fed7d91f96c37364e
 
 build:
   number: 0
